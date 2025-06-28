@@ -90,6 +90,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+@keyframes clap {
+  0%, 100% { transform: rotate(-10deg) scaleX(1); }
+  20% { transform: rotate(10deg) scaleX(1.1); }
+  40% { transform: rotate(-12deg) scaleX(0.95); }
+  60% { transform: rotate(12deg) scaleX(1.05); }
+  80% { transform: rotate(-10deg) scaleX(1); }
+}
+.animate-clap {
+  animation: clap 1.4s cubic-bezier(.36,.07,.19,.97) infinite;
+  display: inline-block;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
