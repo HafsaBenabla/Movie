@@ -4,6 +4,9 @@ import MovieCard from './components/MovieCard';
 import MovieDetails from './components/MovieDetails';
 import { useMovies } from './hooks/useMovies';
 import { API_ENDPOINTS } from './config/api.config';
+import { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaSearch, FaBell, FaUserCircle } from 'react-icons/fa';
 
 
 // Page d'accueil
@@ -60,6 +63,7 @@ const Home = () => {
     </div>
   );
 };
+
 
 // Composant principal App
 function App() {
